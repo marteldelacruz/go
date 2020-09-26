@@ -14,7 +14,11 @@ func main() {
 	// Store result
 	var e float64
 	// Iterations
-	var totalIterations int = 40
+	var totalIterations int
+
+	// as for iterations
+	fmt.Print("Iterations: ")
+	fmt.Scanf("%d ", &totalIterations)
 
 	for i := 0; i < totalIterations; i++ {
 		e += 1 / float64(factorial(i))
